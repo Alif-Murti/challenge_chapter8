@@ -5,6 +5,7 @@
 .nav_link {
     font-weight: 400;
     color: black !important;
+    font-weight: 500;
 }
 
 .nav_link:hover {
