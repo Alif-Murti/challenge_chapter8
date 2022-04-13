@@ -23,10 +23,10 @@ const Footer = () => {
                 </Col>
                 <Col md={2}>
                     <ul className={'py-2 ' +style.nav_footer}>
-                        <li><a href='/OurServices'>Our Services</a></li>
-                        <li><a href='/WhyUs'>Why Us</a></li>
-                        <li><a href='/Testimonial'>Testimonial</a></li>
-                        <li><a href='/FAQ'>FAQ</a></li>
+                        <li><a href='#OurServices'>Our Services</a></li>
+                        <li><a href='#WhyUs'>Why Us</a></li>
+                        <li><a href='#Testimonial'>Testimonial</a></li>
+                        <li><a href='#FAQ'>FAQ</a></li>
                     </ul>
                 </Col>
                 <Col md={3}>
