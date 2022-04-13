@@ -29,9 +29,9 @@ export const SearchBar = ({ view, driver, date, time, passenger }) => {
     // Untuk menghandle submit
     const handleSubmit = () => {
         if (InputDriver === "Pilih Tipe Driver" || InputDate === null || InputTime === null) {
-            alert("Kolom Pencarian belum diisi")
+            alert("Input Kosong")
         } else if (InputDriver === undefined || InputDate === undefined || InputTime === undefined) {
-            alert("Kolom Pencarian belum diisi")
+            alert("Input Kosong")
         } else {
             if (InputPassenger === undefined) {
                 Navigate("/search/result/driver=" + InputDriver + "&date=" + InputDate + "&time=" + InputTime + "&passenger=" + 0)
@@ -80,7 +80,7 @@ export const SearchBar = ({ view, driver, date, time, passenger }) => {
                             </Row>
                         </Col>
                         <Col lg={2} md={12} className={'mt-auto d-grid gap-2 '}>
-                            <Button className="button-secondary" type="submit" onClick={handleSubmit}>
+                            <Button variant='success' type="submit" onClick={handleSubmit}>
                                 Cari Mobil
                             </Button>
                         </Col>

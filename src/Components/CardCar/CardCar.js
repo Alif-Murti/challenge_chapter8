@@ -53,7 +53,7 @@ export const CardCar = ({ view, id, image, name, price, category, createdAt }) =
                         <div className={'d-flex align-items-center mb-1 ' + style.desc_cardresult}><img alt="" src={IconPeople} width="20px" height="20px" className={'me-2 '} /> {changeCategory()} orang</div>
                         <div className={'d-flex align-items-center mb-1 ' + style.desc_cardresult}><img alt="" src={IconSetting} width="20px" height="20px" className={'me-2 '} /> Manual</div>
                         <div className={'d-flex align-items-center mb-1 ' + style.desc_cardresult}><img alt="" src={IconCalendar} width="20px" height="20px" className={'me-2 '} /> Tahun {changeCreatedAt()}</div>
-                        <a href={"../detail/" + id} className={'d-grid gap mt-3 '}><Button className={'button-secondary '}>Pilih Mobil</Button></a>
+                        <a href={"../detail/" + id} className={'d-grid gap mt-3 '}><Button variant='success'>Pilih Mobil</Button></a>
                     </Card.Body>
                 </Card>
             </div>
@@ -81,7 +81,7 @@ export const CardCar = ({ view, id, image, name, price, category, createdAt }) =
                                 <Card.Text className={'m-0 p-0 mb-1 text-end ' + style.price_carddetail}>Rp {changePrice()}</Card.Text>
                             </Col>
                         </Row>
-                        <a href="#" className={'d-grid gap mt-3 '}><Button className={'button-secondary '}>Lanjutkan Pembayaran</Button></a>
+                        <a href="#" className={'d-grid gap mt-3 '}><Button variant='success'>Lanjutkan Pembayaran</Button></a>
                     </Card.Body>
                 </Card>
             </div>

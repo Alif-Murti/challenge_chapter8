@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, Col, Container, Row, Card, Accordion, AccordionCollapse } from 'react-bootstrap'
+import { Button, Col, Container, Row, Card, Accordion } from 'react-bootstrap'
  
 import heroimage2 from '../../Components/Images/img_service.svg'
 import heroimage from '../../Components/Images/img_car.svg'
@@ -238,19 +238,25 @@ export const Home = ({ view }) => {
     const SearchPage = () => {
         return (
             <>
-            <Container>
-                <Row>
-                    <Col md={12}>
-                        <HeroSect />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col md={12}>
-                        <SearchBar view='detail'/>
-                    </Col>
-                </Row>
-            </Container>
-                
+            <section className={style.header}>
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <HeroSect />                   
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section>
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <SearchBar view='detail'/>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            
             </>
             
         )

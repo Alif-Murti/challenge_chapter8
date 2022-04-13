@@ -9,13 +9,13 @@ import { CardCar } from '../../Components/CardCar/CardCar'
 
 export const Search = ({ view }) => {
 
-    // Mengambil Data dari Params
+    
     const { driver, date, time, passenger, id } = useParams()
 
-    // Menampung Data dari API
+    
     const [GetAPI, setGetAPI] = useState(null)
 
-    // Mengambil Data dari API
+    
     useEffect(() => {
         var axios = require('axios');
 
@@ -34,7 +34,7 @@ export const Search = ({ view }) => {
             });
     }, [])
 
-    // Filter Pencarian Mobil
+    
     const filterCar = () => {
         return GetAPI?.map((value, index) => {
             if (value.status === false) {
@@ -47,7 +47,7 @@ export const Search = ({ view }) => {
         })
     }
 
-    // Filter Pencarian Detail Mobil
+    
     const filterDetail = () => {
         return GetAPI?.map((value, index) => {
             if (value.id == id) {
@@ -60,7 +60,7 @@ export const Search = ({ view }) => {
         })
     }
 
-    // Tampilan Hasil pencarian
+    
     const viewResult = () => {
         return (
             <section id="Result-Search">
@@ -76,7 +76,7 @@ export const Search = ({ view }) => {
         )
     }
 
-    // Tampilan Detail Mobil
+    
     const viewDetail = () => {
         return (
             <section id="Detail-Search">
@@ -88,14 +88,14 @@ export const Search = ({ view }) => {
                                 <div className={'p-4 ' + style.searchbox_detail}>
                                     <h5>Tentang Paket</h5>
                                     Include
-                                    <ul>
+                                    <ul className={style.lists}>
                                         <li className={style.text_detail}>Apa saja yang termasuk dalam paket misal durasi max 12 jam</li>
                                         <li className={style.text_detail}>Sudah termasuk bensin selama 12 jam</li>
                                         <li className={style.text_detail}>Sudah termasuk Tiket Wisata</li>
                                         <li className={style.text_detail}>Sudah termasuk pajak</li>
                                     </ul>
                                     Exclude
-                                    <ul>
+                                    <ul className={style.lists}>
                                         <li className={style.text_detail}>Tidak termasuk biaya makan sopir Rp 75.000/hari</li>
                                         <li className={style.text_detail}>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</li>
                                         <li className={style.text_detail}>Tidak termasuk akomodasi penginapan</li>
@@ -104,7 +104,7 @@ export const Search = ({ view }) => {
                                         <Accordion.Item className={style.item_accordion} eventKey="0">
                                             <Accordion.Header className={style.header_accordion}> <h5>Refund, Reschedule, Overtime</h5></Accordion.Header>
                                             <Accordion.Body className={style.body_accordion}>
-                                                <ul>
+                                                <ul className={style.lists}>
                                                     <li className={style.text_detail}>Tidak termasuk biaya makan sopir Rp 75.000/hari</li>
                                                     <li className={style.text_detail}>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</li>
                                                     <li className={style.text_detail}>Tidak termasuk akomodasi penginapan</li>
@@ -124,7 +124,7 @@ export const Search = ({ view }) => {
                                 {filterDetail()}
                             </Col>
                             <Col md={12} className={'mt-5 d-flex justify-content-center '}>
-                                <Button className={'button-secondary'}>Lanjutkan Pembayaran</Button>
+                                <Button variant={'success'}>Lanjutkan Pembayaran</Button>
                             </Col>
                         </Row>
                     </div>
