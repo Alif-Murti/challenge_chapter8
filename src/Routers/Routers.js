@@ -6,7 +6,7 @@ import Search from '../Views/Search/Search'
 export const Routers = () => {
     return (
         <Routes>
-            <Route path="/" element={<Home view="homepage" />} />
+            <Route path="/" element={<Home view="home" />} />
             <Route path="/search" element={<Search view="search" />} />
             <Route path="/search/result/driver=:driver&date=:date&time=:time&passenger=:passenger" element={<Search view="result" />} />
             <Route path="/search/detail/:id" element={<Search view="detail" />} />

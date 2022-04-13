@@ -23,22 +23,22 @@ const Footer = () => {
                 </Col>
                 <Col md={2}>
                     <ul className={'py-2 ' +style.nav_footer}>
-                        <li><a href='#'>Our Services</a></li>
-                        <li><a href='#'>Why Us</a></li>
-                        <li><a href='#'>Testimonial</a></li>
-                        <li><a href='#'>FAQ</a></li>
+                        <li><a href='/OurServices'>Our Services</a></li>
+                        <li><a href='/WhyUs'>Why Us</a></li>
+                        <li><a href='/Testimonial'>Testimonial</a></li>
+                        <li><a href='/FAQ'>FAQ</a></li>
                     </ul>
                 </Col>
                 <Col md={3}>
                     <ul className={'py-2 '+ style.nav_footer}>
                         <li>Connect With Us</li>
-                        <li className={style.connect + ' py-2'}><a href='#'><img src={fb} className={'mr-1'}/><img src={ig}  className={'mx-1'}/><img src={twitter} className={'mx-1'}/><img src={mail} className={'mx-1'}/><img src={twitch} className={'mx-1'}/></a></li>
+                        <li className={style.connect + ' py-2'}><a href='/twitter'><img alt=""  src={fb} className={'mr-1'}/><img alt=""  src={ig}  className={'mx-1'}/><img alt=""  src={twitter} className={'mx-1'}/><img alt=""  src={mail} className={'mx-1'}/><img alt=""  src={twitch} className={'mx-1'}/></a></li>
                     </ul>
                 </Col>
                 <Col md={3}>
                     <ul className={'py-2 ' + style.nav_footer}>
-                        <li><a href='#'>Copyright Binar</a></li>
-                        <li><a href='#'><img src={logo} className={'py-2'} /></a></li>
+                        <li><a href='/'>Copyright Binar</a></li>
+                        <li><a href='/'><img alt=""  src={logo} className={'py-2'} /></a></li>
                     </ul>
                 </Col>
             </Row>

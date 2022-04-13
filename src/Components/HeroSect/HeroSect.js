@@ -15,7 +15,7 @@ const HeroSect = () => {
                     <p className={style.herop}>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
                 </Col>
                 <Col md={6}>
-                    <img src={heroimage} alt="hero-image" className={style.heroimage} />
+                    <img src={heroimage} alt="" className={style.heroimage} />
                 </Col>
             </Row>
         </Container>

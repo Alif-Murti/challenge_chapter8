@@ -2,9 +2,14 @@ ul{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .nav_footer li{
     font-weight: 600;
     margin: 10px 0px;
+    
     
 }
 
